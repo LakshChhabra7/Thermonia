@@ -192,12 +192,14 @@
   font-size: 0.9rem;
   color: var(--foreground);
   outline: none;
+
+  &:focus {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 3px oklch(0.76 0.16 62 / 20%);
+  }
 }
 
-@utility field-input:focus {
-  border-color: var(--ring);
-  box-shadow: 0 0 0 3px oklch(0.76 0.16 62 / 20%);
-}
+
 
 @utility btn-primary {
   display: inline-flex;
@@ -215,11 +217,13 @@
   border-radius: var(--radius);
   transition: filter 150ms ease;
   cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.08);
+  }
 }
 
-@utility btn-primary:hover {
-  filter: brightness(1.08);
-}
+
 
 @utility btn-ghost {
   display: inline-flex;
@@ -235,8 +239,10 @@
   padding: 0.55rem 0.9rem;
   border-radius: var(--radius);
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--surface-raised);
+  }
 }
 
-@utility btn-ghost:hover {
-  background-color: var(--surface-raised);
-}
+
