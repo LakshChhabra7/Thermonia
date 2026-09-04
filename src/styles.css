@@ -19,6 +19,11 @@
  */
 
 @theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
