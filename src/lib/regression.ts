@@ -26,7 +26,7 @@ function multiply(a: Matrix, b: Matrix): Matrix {
       const av = ai[p]!;
       if (av === 0) continue;
       const bp = b[p]!;
-      for (let j = 0; j < m; j++) oi[j] += av * bp[j]!;
+      for (let j = 0; j < m; j++) oi[j] = oi[j]! + av * bp[j]!;
     }
   }
   return out;
